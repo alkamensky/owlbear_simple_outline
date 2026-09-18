@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "manifest_version": 1,
   "description": "Adds silhouette outlines and a minimal shadow to Character tokens.",
-  "author": "Igor",
+  "author": "altraboxel",
   "icon": "/icon.svg",
   "action": {
     "title": "Token Outline",
