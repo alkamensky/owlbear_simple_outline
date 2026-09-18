@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Token Outline</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="panel">
+    <div class="title-row">
+      <div>
+        <h1>Token Outline</h1>
+        <p>Обводка и тень по прозрачному силуэту токена.</p>
+      </div>
+    </div>
+
+    <section class="group">
+      <label class="label">Режим</label>
+      <div class="segmented" role="radiogroup" aria-label="Режим эффекта">
+        <label><input type="radio" name="mode" value="outline" checked><span>Обводка</span></label>
+        <label><input type="radio" name="mode" value="shadow"><span>Тень</span></label>
+        <label><input type="radio" name="mode" value="both"><span>Оба</span></label>
+      </div>
+    </section>
+
+    <section class="group" id="outline-settings">
+      <div class="field-row">
+        <label class="label" for="color">Цвет</label>
+        <div class="color-wrap">
+          <input id="color" type="color" value="#ffffff" aria-label="Цвет обводки" />
+          <input id="color-text" class="hex" type="text" value="#FFFFFF" maxlength="7" spellcheck="false" />
+        </div>
+      </div>
+
+      <div class="field-row thickness-row">
+        <label class="label" for="width">Толщина</label>
+        <div class="range-wrap">
+          <input id="width" type="range" min="1" max="20" value="5" step="1" />
+          <div class="number-wrap"><input id="width-number" type="number" min="1" max="20" value="5" /><span>px</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" id="selection-info">Выдели один или несколько токенов на слое Character.</section>
+
+    <section class="actions">
+      <button id="apply-selected" class="primary">Применить к выделенным</button>
+      <button id="apply-all">Применить ко всем Character</button>
+      <button id="remove-selected" class="danger-secondary">Убрать с выделенных</button>
+    </section>
+
+    <div id="status" class="status" aria-live="polite"></div>
+    <p class="hint">Тень фиксированная: мягкая чёрная, небольшое смещение вниз-вправо. Повторное применение заменяет старый эффект.</p>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

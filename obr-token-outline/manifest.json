@@ -1,0 +1,15 @@
+{
+  "name": "Token Outline",
+  "version": "1.0.0",
+  "manifest_version": 1,
+  "description": "Adds silhouette outlines and a minimal shadow to Character tokens.",
+  "author": "Igor",
+  "icon": "/icon.svg",
+  "action": {
+    "title": "Token Outline",
+    "icon": "/icon.svg",
+    "popover": "/",
+    "height": 455,
+    "width": 340
+  }
+}
